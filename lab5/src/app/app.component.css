@@ -5,10 +5,11 @@
     font-style: normal;
 }
 
-body {
+.body {
     font-family: "myFont";
     width: 100vw;
     background-color: rgb(255, 213, 251);
+    margin: 0px 0px 0px 0px;
 }
 
 .header {
@@ -22,6 +23,7 @@ body {
     font-size: 50px;
     line-height: 45px;
     font-weight: 500;
+    margin-top: 0px;
 }
 
 .header>h2 {
@@ -32,10 +34,11 @@ body {
 }
 
 .task {
-    padding-top: 2vw;
+    display: grid;
     text-align: center;
     width: 90vw;
     padding-left: 5vw;
+    align-items: center;
 }
 
 .task>h3 {
@@ -43,6 +46,25 @@ body {
     font-size: 30px;
     line-height: 35px;
     font-weight: 800;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.task>.p1 {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.task>.p2 {
+    grid-area: 3 / 1 / 4 / 2;
+    text-align: start;
+    justify-self: start;
+}
+
+.task>.p3 {
+    grid-area: 4 / 1 / 5 / 3;
+}
+
+.task>.img {
+    grid-area: 3 / 2 / 4 / 3;
 }
 
 .result>h1 {
@@ -58,7 +80,6 @@ body {
 .result {
     width: 100%;
     background-color: pink;
-    display: grid;
 }
 
 
@@ -68,56 +89,81 @@ body {
         font-family: "myFont";
         width: 100vw;
         background-color: rgb(255, 213, 251);
+        margin: 0px 0px 0px 0px;
     }
-
+    
     .header {
         text-align: center;
         background-color: rgb(225, 181, 255);
         width: 100vw;
     }
-
+    
     .header>h1 {
         font-family: "myFont";
-        font-size: 50px;
+        font-size: 35px;
         line-height: 45px;
         font-weight: 500;
+        margin-top: 0px;
     }
-
+    
     .header>h2 {
         font-family: "myFont";
-        font-size: 30px;
+        font-size: 25px;
         line-height: 35px;
         font-weight: 300;
     }
-
+    
     .task {
-        padding-top: 2vw;
+        display: grid;
         text-align: center;
         width: 90vw;
         padding-left: 5vw;
+        align-items: center;
     }
-
+    
     .task>h3 {
         font-family: "myFont";
-        font-size: 30px;
+        font-size: 20px;
         line-height: 35px;
         font-weight: 800;
+        grid-area: 1 / 1 / 2 / 3;
     }
-
+    
+    .task>.p1 {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+    
+    .task>.p2 {
+        grid-area: 3 / 1 / 4 / 2;
+        text-align: start;
+        justify-self: start;
+        width: 60vw;
+    }
+    
+    .task>.p3 {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+    
+    .task>.img {
+        grid-area: 3 / 2 / 4 / 3;
+        justify-self: end;
+        width: 30vw;
+        height: auto;
+    }
+    
     .result>h1 {
         font-family: "myFont";
         justify-content: center;
-
+    
         align-items: center;
         font-size: 35px;
         line-height: 40px;
         font-weight: 800;
     }
-
+    
     .result {
         width: 100%;
         background-color: pink;
-        display: grid;
     }
 
 }
@@ -127,56 +173,80 @@ body {
         font-family: "myFont";
         width: 100vw;
         background-color: rgb(255, 213, 251);
+        margin: 0px 0px 0px 0px;
     }
-
+    
     .header {
         text-align: center;
         background-color: rgb(225, 181, 255);
         width: 100vw;
     }
-
+    
     .header>h1 {
         font-family: "myFont";
-        font-size: 50px;
+        font-size: 30px;
         line-height: 45px;
-        font-weight: 500;
+        font-weight: 700;
+        margin-top: 0px;
     }
-
+    
     .header>h2 {
         font-family: "myFont";
-        font-size: 30px;
+        font-size: 23px;
         line-height: 35px;
         font-weight: 300;
     }
-
+    
     .task {
-        padding-top: 2vw;
+        display: grid;
         text-align: center;
         width: 90vw;
         padding-left: 5vw;
+        align-items: center;
     }
-
+    
     .task>h3 {
         font-family: "myFont";
-        font-size: 30px;
+        font-size: 20px;
         line-height: 35px;
         font-weight: 800;
+        grid-area: 1 / 1 / 2 / 3;
     }
-
+    
+    .task>.p1 {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+    
+    .task>.p2 {
+        grid-area: 3 / 1 / 4 / 3;
+        text-align: start;
+        justify-self: start;
+        width: 90vw;
+    }
+    
+    .task>.p3 {
+        grid-area: 5 / 1 / 6 / 3;
+    }
+    
+    .task>.img {
+        grid-area: 4 / 1 / 5 / 3;
+        justify-self: center;
+        width: unset;
+        height: unset;
+    }
+    
     .result>h1 {
         font-family: "myFont";
         justify-content: center;
-
+    
         align-items: center;
-        font-size: 35px;
+        font-size: 25px;
         line-height: 40px;
         font-weight: 800;
     }
-
+    
     .result {
         width: 100%;
         background-color: pink;
-        display: grid;
     }
-
 }
