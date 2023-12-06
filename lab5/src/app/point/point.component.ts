@@ -29,7 +29,7 @@ export class PointComponent implements OnInit {
     }
   }
   getColor(b: boolean){
-    return b == true ? "green" : "red";
+    return b == true ? "darkgreen" : "darkred";
   }
   constructor() { }
   ngOnInit(): void{ }
