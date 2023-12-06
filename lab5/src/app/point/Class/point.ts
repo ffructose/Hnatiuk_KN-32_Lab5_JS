@@ -8,6 +8,6 @@ export class Point {
         this.belong = b;
     }
     getColor(b: boolean): string {
-        return b ? 'green' : 'red';
+        return b ? 'darkgreen' : 'darkred';
     }
 }
