@@ -1,21 +1,32 @@
 @import url(../app.component.css);
 
-.form{
-  background-color: rgba(63, 175, 128, 0.5);
-  border-radius: 20px;
-  box-sizing: border-box;
-  padding: 20px;
-  width: 80%;
-  margin-right: 5%;
-  font-family: "Spectral", serif;
-  color: #37378d;
-  font-size: 20px;
-  font-weight: bold;
+@font-face {
+  font-family: "myFont";
+  src: url(../../../../fonts/AdventPro/AdventPro_ExtraExpanded-Medium.ttf);
+  font-weight: 200;
+  font-style: normal;
 }
 
-fieldset {
-  width: 100%;
+.article{
+  width: 90vw;
+  display: grid;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
+
+.form{
+  background-color: darkslateblue;
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding: 35px;
+  width: 100%;
+  font-family: "myFont";
+  color: beige;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+
 
 input {
   border: none;
@@ -23,45 +34,60 @@ input {
   width: 25%;
   height: 45px;
   outline: none;
-  border-bottom: 1px solid #b7e4c7ff;
-  font-family: "Spectral", serif;
-  color: rgb(77, 77, 156); 
-  font-size: 20px;
-  font-weight: bold;
+  border-bottom: 1px solid burlywood;
+  font-family: "myFont";
+  color: burlywood; 
+  font-size: 25px;
+  font-weight: 250;
 }
+
+
+@media (max-width: 425px) {
+  input {
+    width: 85%;
+  }
+
+}
+
+input:focus {
+  background-color: rgb(62, 53, 122);
+  border-radius: 25px;
+}
+
 
 input:invalid {
   border-bottom: 1px dashed red;
+  background: linear-gradient(darkslateblue 30%, red);
+  
  }
 
 .input_r {
-  width: 80%;
+  width: 50%;
 }
 
-button{
-  display: inline-block;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #e1b168;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  user-select: none;
-  background-color: #318555;
-  border: 1px solid #031a3c;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  border-radius: 0.25rem;
-  transition: background-color 0.15s ease-in-out;
+button {
+  justify-self: center;
+
+  background-color: cornflowerblue;
+  font-family: "myFont";
+  border: none;
+  color: aliceblue;
+  padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 26px;
+  transition: all 0.3s ease-out;
+  text-align: center;
+  width: 25%;
 }
 
 button:hover {
-  color: #e1b168;
-  background-color: #1a0122;
-  border-color: #0e010a;
+  background-color: rgb(168, 112, 201);
+  cursor: pointer;
 }
 
 .flex_row {
@@ -69,15 +95,20 @@ button:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 .card {
   width: 150px;
   height: 50px;
-  border: 1px solid #e1b168;
-  background-color: #f5ddb9; font-family: "Spectral", serif;
-  color: rgb(64, 64, 129);
+  border-radius: 8px;
+  border: 2px solid pink;
+  background-color: pink;
+   font-family: "myFont";
+  color: bisque;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 200;
   text-align: center;
+  display: grid;
+  align-self: center;
 }

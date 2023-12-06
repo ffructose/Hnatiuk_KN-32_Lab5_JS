@@ -1,44 +1,44 @@
-<article class="flex">
-    <h2>enter dani </h2>
+<article class="flex article">
+    <h2>Введіть дані:</h2>
     <form class="flex form">
         <fieldset>
-            <legend>value x</legend>
-            <label>Xn =
+            <legend>значення по х</legend>
+            <label>Xn:
                 <input type="number" required value="-3" #Xn>
             </label>
-            <label>Xk =
+            <label>Xk:
                 <input type="number" required value="3" #Xk>
             </label>
-            <label>Xh =
+            <label>Xh:
                 <input type="number" required value="1" #Xh>
             </label>
         </fieldset>
         <fieldset>
-            <legend>value y</legend>
-            <label>Yn =
+            <legend>значення по y</legend>
+            <label>Yn:
                 <input type="number" required value="-3" #Yn>
             </label>
-            <label>Yk =
+            <label>Yk:
                 <input type="number" required value="3" #Yk>
             </label>
-            <label>Yh =
+            <label>Yh:
                 <input type="number" required value="1" #Yh>
             </label>
         </fieldset>
         <fieldset>
-            <legend>value r</legend>
-            <label>R =
+            <legend>радіус фігури</legend>
+            <label>R:
                 <input class="input_r" type="number" required value="3" min="1" #R>
             </label>
         </fieldset>
     </form>
     <button
     (click)="setAll(Xn.value,Xk.value,Xh.value,Yn.value,Yk.value,Yh.value,R.value)">
-    <h3>Розрахунок</h3>
+    Готово
   </button>
   <div class="flex_row">
     <div class="card" *ngFor="let pp of p.p" [style.backgroundColor]="getColor(pp.belong)">
-      <p> X= {{ pp.x }} Y= {{ pp.y }} </p>
+      <p> X: {{ pp.x }}  Y: {{ pp.y }} </p>
     </div>
     
   </div>
