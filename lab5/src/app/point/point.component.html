@@ -32,5 +32,14 @@
             </label>
         </fieldset>
     </form>
-
+    <button
+    (click)="setAll(Xn.value,Xk.value,Xh.value,Yn.value,Yk.value,Yh.value,R.value)">
+    <h3>Розрахунок</h3>
+  </button>
+  <div class="flex_row">
+    <div class="card" *ngFor="let pp of p.p" [style.backgroundColor]="getColor(pp.belong)">
+      <p> X= {{ pp.x }} Y= {{ pp.y }} </p>
+    </div>
+    
+  </div>
 </article>
