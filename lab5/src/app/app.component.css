@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "myFont";
+    src: url(../../../fonts/AdventPro/AdventPro_ExtraExpanded-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: "myFont";
+    width: 100vw;
+    background-color: rgb(255, 213, 251);
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(225, 181, 255);
+    width: 100vw;
+}
+
+.header>h1 {
+    font-family: "myFont";
+    font-size: 50px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.header>h2 {
+    font-family: "myFont";
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.task {
+    padding-top: 2vw;
+    text-align: center;
+    width: 90vw;
+    padding-left: 5vw;
+}
+
+.task>h3 {
+    font-family: "myFont";
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;
+}
+
+.result>h1 {
+    font-family: "myFont";
+    justify-content: center;
+
+    align-items: center;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 800;
+}
+
+.result {
+    width: 100%;
+    background-color: pink;
+    display: grid;
+}
+
+
+
+@media (max-width: 768px) {
+    .body {
+        font-family: "myFont";
+        width: 100vw;
+        background-color: rgb(255, 213, 251);
+    }
+
+    .header {
+        text-align: center;
+        background-color: rgb(225, 181, 255);
+        width: 100vw;
+    }
+
+    .header>h1 {
+        font-family: "myFont";
+        font-size: 50px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+
+    .header>h2 {
+        font-family: "myFont";
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 300;
+    }
+
+    .task {
+        padding-top: 2vw;
+        text-align: center;
+        width: 90vw;
+        padding-left: 5vw;
+    }
+
+    .task>h3 {
+        font-family: "myFont";
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 800;
+    }
+
+    .result>h1 {
+        font-family: "myFont";
+        justify-content: center;
+
+        align-items: center;
+        font-size: 35px;
+        line-height: 40px;
+        font-weight: 800;
+    }
+
+    .result {
+        width: 100%;
+        background-color: pink;
+        display: grid;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .body {
+        font-family: "myFont";
+        width: 100vw;
+        background-color: rgb(255, 213, 251);
+    }
+
+    .header {
+        text-align: center;
+        background-color: rgb(225, 181, 255);
+        width: 100vw;
+    }
+
+    .header>h1 {
+        font-family: "myFont";
+        font-size: 50px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+
+    .header>h2 {
+        font-family: "myFont";
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 300;
+    }
+
+    .task {
+        padding-top: 2vw;
+        text-align: center;
+        width: 90vw;
+        padding-left: 5vw;
+    }
+
+    .task>h3 {
+        font-family: "myFont";
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 800;
+    }
+
+    .result>h1 {
+        font-family: "myFont";
+        justify-content: center;
+
+        align-items: center;
+        font-size: 35px;
+        line-height: 40px;
+        font-weight: 800;
+    }
+
+    .result {
+        width: 100%;
+        background-color: pink;
+        display: grid;
+    }
+
+}

@@ -1,0 +1,83 @@
+@import url(../app.component.css);
+
+.form{
+  background-color: rgba(63, 175, 128, 0.5);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 80%;
+  margin-right: 5%;
+  font-family: "Spectral", serif;
+  color: #37378d;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+fieldset {
+  width: 100%;
+}
+
+input {
+  border: none;
+  background: transparent;
+  width: 25%;
+  height: 45px;
+  outline: none;
+  border-bottom: 1px solid #b7e4c7ff;
+  font-family: "Spectral", serif;
+  color: rgb(77, 77, 156); 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input:invalid {
+  border-bottom: 1px dashed red;
+ }
+
+.input_r {
+  width: 80%;
+}
+
+button{
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #e1b168;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: #318555;
+  border: 1px solid #031a3c;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  color: #e1b168;
+  background-color: #1a0122;
+  border-color: #0e010a;
+}
+
+.flex_row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #e1b168;
+  background-color: #f5ddb9; font-family: "Spectral", serif;
+  color: rgb(64, 64, 129);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
